@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+body {
+  margin: 0px;
+}
+h1,
+h2,
+h3,
+h4 ul,
+p,
+blockquote {
+  margin: 0px;
+}
+ul {
+  padding: 0px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  padding-left: 30px;
+  padding-top: 130px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.div-esquerda {
+  padding: 16px;
+  max-height: 1224px;
+}
+
+.div-direita {
+  height: 1000px;
+  background-color: rgba(15, 148, 155, 1);
+}
+
+@media (max-width: 1030px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  a {
+    padding-top: 0px;
+  }
+  .div-direita {
+    margin-top: -50px;
+    padding-bottom: 200px;
+    height: 650px;
+  }
+  .div-direita img {
+    padding-top: 0px;
+  }
+}
+
+/* DIVS */
+.div-direita img {
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.div-esquerda h2 {
+  font-family: Poppins;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0em;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.div-esquerda p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* FORMULARIO */
+
+.formulario-container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contato-formulario {
+  padding: 4px;
+  padding: 80px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.form label {
+  display: block;
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+  margin-bottom: 4px;
+}
+
+.form .col-2 {
+  grid-column: span 2;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background: rgba(247, 247, 247, 1);
+  border: 1px solid rgba(237, 237, 237, 1);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*FORMULARIO RESPONSIVO*/
+@media (max-width: 615px) {
+  .formulario-container {
+    display: grid;
+    padding: 0px;
+    margin: 0px;
+      text-align: center;
+  }
+
+}
+
+@media (max-width: 615px) {
+  .div-esquerda p {
+    font-size: 16px;
+  }
+  .div-esquerda h2 {
+    font-size: 28px;
+    padding-top: 0px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 441px) {
+  .div-esquerda p {
+    font-size: 14px;
+    margin-bottom: -20px;
+  }
+  .div-esquerda h2 {
+    font-size: 20px;
+  }
+  .form input[type="text"] {
+    font-size: 14px;
+  }
+  .form input[type="email"] {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 441px) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 615px) {
+  button {
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #000000;
+  }
+}
+/* BOTÃO */
+button {
+  grid-column: span 2;
+}
+
+.botao {
+  background-color: rgba(15, 148, 155, 1);
+  color: 000000;
+  border: 0px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 9px 76px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.botao:hover {
+  background-color: rgba(16, 142, 148, 1);
+}
+
+.contato-redes {
+  display: flex;
+  justify-content: center;
+}
